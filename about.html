@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Consultus AI</title>
+  <meta name="description" content="About Consultus AI — founded by Chris Holland, former Head of Data at North America's fastest-growing pet insurance company." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="logo">Consultus<span class="ai">AI</span></a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/capabilities.html">Capabilities</a></li>
+        <li><a href="/case-studies.html">Case Studies</a></li>
+        <li><a href="/about.html" class="active">About</a></li>
+      </ul>
+      <a href="mailto:chris@consultusai.com" class="nav-cta">Get in touch</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-hero">
+      <div class="about-photo">
+        <img src="/images/chris.jpg" alt="Chris Holland, founder of Consultus AI" />
+      </div>
+
+      <div class="about-bio">
+        <div class="role">Founder · Consultus AI</div>
+        <h1>Chris Holland</h1>
+        <p>
+          Before founding Consultus AI, I ran data for the fastest-growing pet
+          insurance company in North America — leading the team from early
+          scale through a private equity exit five years later.
+        </p>
+        <p>
+          That run taught me what actually moves the needle inside a
+          high-growth business: <strong>clean pipelines, honest dashboards,
+          testable decisions, and relentless conversion-rate work.</strong>
+          The tools are well understood. What's rare is the discipline to
+          wire them together correctly and the operator judgment to know
+          what's worth measuring in the first place.
+        </p>
+        <p>
+          Consultus AI is how I bring that playbook to small businesses —
+          the ones that can't hire an enterprise data team but deserve
+          enterprise-quality answers. AI is the force multiplier that makes
+          the economics work. A human (me) is on every engagement, every
+          review, every reply.
+        </p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="specialties">
+        <div class="section-eyebrow">Specialties</div>
+        <h2 class="section-title">What I've spent years getting right.</h2>
+        <p class="section-lead">
+          A decade of in-house work, concentrated into the handful of things
+          that consistently pay off.
+        </p>
+
+        <div class="specialties-grid">
+          <div class="specialty">
+            <div class="num">01</div>
+            <h4>AI Systems</h4>
+            <p>Designing and deploying production AI workflows — not demos — that sit inside a real business and earn their keep.</p>
+          </div>
+          <div class="specialty">
+            <div class="num">02</div>
+            <h4>A/B Testing</h4>
+            <p>Test design, power calculations, and reading results honestly. Distinguishing signal from noise when the stakes are real.</p>
+          </div>
+          <div class="specialty">
+            <div class="num">03</div>
+            <h4>Conversion Rate Optimization</h4>
+            <p>Funnel instrumentation, hypothesis generation, and the iterative grind that actually compounds CVR over quarters.</p>
+          </div>
+          <div class="specialty">
+            <div class="num">04</div>
+            <h4>Data Architecture</h4>
+            <p>Warehouse design, ingestion patterns, and the boring infrastructure decisions that determine whether your analytics works in year three.</p>
+          </div>
+          <div class="specialty">
+            <div class="num">05</div>
+            <h4>Dashboards</h4>
+            <p>Dashboards that answer questions instead of asking them. Axes scaled to where the business lives. Nothing on screen that isn't earning its place.</p>
+          </div>
+          <div class="specialty">
+            <div class="num">06</div>
+            <h4>Data Modeling</h4>
+            <p>Clean semantic layers. Reusable transformations. Models a new hire can understand on their second day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="values">
+        <div class="section-eyebrow">How I work</div>
+        <h2 class="section-title">A few things I care about.</h2>
+
+        <div class="values-grid">
+          <div class="value">
+            <h4>Own it end-to-end</h4>
+            <p>If a number on your dashboard is wrong, that's my problem. I don't hand off. I don't disappear. I ship fixes, not finger-pointing.</p>
+          </div>
+          <div class="value">
+            <h4>Work in public</h4>
+            <p>Every transform is in your GitHub. Every dashboard is in your Metabase. No hidden models. No proprietary layer you'd lose if I walked away.</p>
+          </div>
+          <div class="value">
+            <h4>Explain the reasoning</h4>
+            <p>If I'm making a modeling choice, you hear why. If an A/B result is ambiguous, I say so. Good data work is mostly being honest about what you don't know.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact">
+    <div class="contact-inner">
+      <h2>Want to <span class="accent">figure it out</span> together?</h2>
+      <p>Send an email. Describe what's in the way. I read every message myself.</p>
+      <a href="mailto:chris@consultusai.com" class="contact-email">chris@consultusai.com</a>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Consultus AI · Figure it out.</footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>

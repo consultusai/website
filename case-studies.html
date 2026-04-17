@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Case Studies — Consultus AI</title>
+  <meta name="description" content="Consultus AI engagements — property management analytics, CPG reporting pipelines, and insurance broker automation. Client names withheld; industries and work are real." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="logo">Consultus<span class="ai">AI</span></a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/capabilities.html">Capabilities</a></li>
+        <li><a href="/case-studies.html" class="active">Case Studies</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+      <a href="mailto:chris@consultusai.com" class="nav-cta">Get in touch</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section section-narrow" style="padding-top:140px">
+      <div class="section-eyebrow">Case Studies</div>
+      <h1 class="section-title">In the field.</h1>
+      <p class="section-lead">
+        Two engagements, both live. One running in production; one in active
+        build-out. Real systems, not mockups. Client names withheld out of
+        respect for our partners — the work is real.
+      </p>
+    </section>
+
+    <section class="section reveal" id="property-manager">
+      <div class="case-detail">
+        <div class="case-detail-header">
+          <div class="meta"><span class="case-status live">Live</span> &nbsp; Property Management</div>
+          <h2>Property Manager</h2>
+          <p class="summary">
+            A multi-property residential operator running a full analytics
+            pipeline for delinquency, occupancy, and renewal intelligence —
+            built and maintained by us, with a daily-refreshed dashboard for
+            the client's team.
+          </p>
+        </div>
+
+        <div class="case-section">
+          <h4>Challenge</h4>
+          <div>
+            <p>
+              Delinquency tracking was lived in spreadsheets. Occupancy was reported
+              monthly — long after the window to do anything about it had closed.
+              Renewal risk was a gut feel, not a metric. The operator wanted
+              decision-grade reporting without hiring a data team.
+            </p>
+          </div>
+        </div>
+
+        <div class="case-section">
+          <h4>Approach</h4>
+          <div>
+            <ul>
+              <li>Stood up a dedicated GCP project and BigQuery warehouse.</li>
+              <li>Built a Dataform pipeline: raw → cleaned → dashboard-ready, version-controlled in GitHub.</li>
+              <li>Deployed a Metabase dashboard scoped to the client's collection, with permissioned access.</li>
+              <li>Used AI to draft SQL transforms and dashboard cards at speed — every change reviewed and shipped by a human on our team.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="case-section">
+          <h4>Outcome</h4>
+          <div>
+            <ul>
+              <li>Daily refresh of delinquency, occupancy, and renewal metrics.</li>
+              <li>Axis scaling tuned so meaningful variance actually shows up — not a flat line at 90%.</li>
+              <li>New reports shipped in hours, not weeks — requests come in plain English, we turn them around.</li>
+              <li>Live on our hosted Metabase instance, permissioned to the client login.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="protein-bar-company">
+      <div class="case-detail">
+        <div class="case-detail-header">
+          <div class="meta"><span class="case-status">In progress</span> &nbsp; CPG · Protein Bars</div>
+          <h2>Protein Bar Company</h2>
+          <p class="summary">
+            Reporting stack and alert tooling for a protein bar brand —
+            warehouse, transforms, and dashboards, currently in active build-out.
+          </p>
+        </div>
+
+        <div class="case-section">
+          <h4>Challenge</h4>
+          <div>
+            <p>
+              Sales, inventory, and channel data scattered across platforms. No
+              unified view of performance. No way to catch anomalies before they
+              show up in a monthly summary — by which point the quarter is half over.
+            </p>
+          </div>
+        </div>
+
+        <div class="case-section">
+          <h4>Approach</h4>
+          <div>
+            <ul>
+              <li>BigQuery warehouse in a dedicated GCP project.</li>
+              <li>Dataform-driven transformations with a strict dashboard layer — no card queries intermediate tables.</li>
+              <li>Metabase collection and permissioning set up for internal stakeholders.</li>
+              <li>AI-surfaced alerts on revenue and conversion anomalies (in design).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="case-section">
+          <h4>Status</h4>
+          <div>
+            <p>
+              Warehouse provisioned, initial ingest schemas defined, dashboard
+              layer scaffolded. Anomaly alerting and client-facing dashboard build
+              scheduled next.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" style="text-align:center">
+      <div class="section-eyebrow" style="justify-content:center">More engagements coming</div>
+      <h2 class="section-title" style="margin-bottom:40px">Want to be next?</h2>
+      <a href="mailto:chris@consultusai.com" class="btn btn-primary">Start a conversation <span class="btn-arrow">→</span></a>
+    </section>
+  </main>
+
+  <section class="contact">
+    <div class="contact-inner">
+      <h2>Have something to <span class="accent">figure out?</span></h2>
+      <p>Describe the mess. We'll tell you what we can do with it.</p>
+      <a href="mailto:chris@consultusai.com" class="contact-email">chris@consultusai.com</a>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Consultus AI · Figure it out.</footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Capabilities — Consultus AI</title>
+  <meta name="description" content="How Consultus AI builds analytics and automation: BigQuery warehouses, Dataform transforms, Metabase dashboards — human-led engagements with AI doing the heavy lifting." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="logo">Consultus<span class="ai">AI</span></a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/capabilities.html" class="active">Capabilities</a></li>
+        <li><a href="/case-studies.html">Case Studies</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+      <a href="mailto:chris@consultusai.com" class="nav-cta">Get in touch</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section section-narrow" style="padding-top:140px">
+      <div class="section-eyebrow">Capabilities</div>
+      <h1 class="section-title">Human-led. AI-enabled.</h1>
+      <p class="section-lead">
+        Most analytics engagements end the moment the consultants leave. Ours
+        don't. We stay. AI lets a small team move like a big one — drafting
+        transforms, building dashboards, writing alerts — but every change
+        is reviewed and shipped by a human who's accountable to you. You
+        are never left in the dark.
+      </p>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-eyebrow">How it works</div>
+      <h2 class="section-title">The stack, end to end.</h2>
+      <p class="section-lead">
+        Six layers, all off-the-shelf, wired together deliberately. Nothing
+        bespoke that you can't walk away with.
+      </p>
+
+      <table class="stack-table">
+        <thead>
+          <tr><th>Layer</th><th>Tool</th><th>What it does</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Data warehouse</td><td>BigQuery</td><td>Stores raw and cleaned client data. One project per client, fully isolated.</td></tr>
+          <tr><td>Transforms</td><td>Dataform</td><td>SQL pipelines from raw → cleaned → dashboard-ready, version controlled and scheduled.</td></tr>
+          <tr><td>Version control</td><td>GitHub</td><td>Every transform lives in a repo. Every change is a reviewable diff before it ships.</td></tr>
+          <tr><td>Dashboards</td><td>Metabase</td><td>Client-facing reporting. Per-client collections, per-client permissions, per-client logins.</td></tr>
+          <tr><td>Hosting</td><td>Railway</td><td>Runs the Metabase app. Cheap, stable, no infra team required.</td></tr>
+          <tr><td>Force multiplier</td><td>Claude (Anthropic)</td><td>Drafts SQL, builds dashboards, writes alerts under our direction. We review every change and own the outcome.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-eyebrow">Principles</div>
+      <h2 class="section-title">How we think about data.</h2>
+      <p class="section-lead">
+        Opinions earned from engagements, not from textbooks.
+      </p>
+
+      <div class="principle">
+        <div class="principle-num">01</div>
+        <div>
+          <h3>Show the variance, not the zero.</h3>
+          <p>
+            Occupancy doesn't live between 0% and 100% — it lives between 85% and 95%.
+            If the difference between a great month and a bad month doesn't show up on
+            the chart, the chart isn't doing its job. Axes get scaled to where the
+            business actually operates.
+          </p>
+        </div>
+      </div>
+
+      <div class="principle">
+        <div class="principle-num">02</div>
+        <div>
+          <h3>Dashboards read only from deliberate tables.</h3>
+          <p>
+            Nothing in production queries intermediate models. Every dashboard sources
+            from a dashboard-layer table — a deliberate, reviewed transformation.
+            This keeps surprise breakages out of client views when upstream data shifts.
+          </p>
+        </div>
+      </div>
+
+      <div class="principle">
+        <div class="principle-num">03</div>
+        <div>
+          <h3>If a human does it twice, automate it.</h3>
+          <p>
+            Sending the same follow-up email. Checking the same report each morning.
+            Reconciling the same two spreadsheets. The second time through is the signal.
+            The third time through is embarrassing.
+          </p>
+        </div>
+      </div>
+
+      <div class="principle">
+        <div class="principle-num">04</div>
+        <div>
+          <h3>The stack is the deliverable.</h3>
+          <p>
+            No lock-in, no black box. Your GCP project. Your GitHub repo. Your Metabase
+            instance. If we vanished tomorrow, the system keeps running — and any
+            competent engineer can pick it up.
+          </p>
+        </div>
+      </div>
+
+      <div class="principle">
+        <div class="principle-num">05</div>
+        <div>
+          <h3>A human is always on the other end.</h3>
+          <p>
+            AI helps us build and maintain faster than a team our size has any
+            business doing. But it doesn't replace us. When you send a question,
+            a person reads it. When a change ships, a person reviewed it. You
+            are not being handed off to a model.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-eyebrow">By industry</div>
+      <h2 class="section-title">What we deliver.</h2>
+      <p class="section-lead">
+        Different problems, same machinery. Here's what the work actually looks like
+        in each vertical we serve.
+      </p>
+
+      <div class="industries">
+        <div class="industry-card">
+          <h4>Property Management</h4>
+          <p style="margin-bottom:16px"><strong style="color:var(--text)">Delinquency, end to end.</strong></p>
+          <p>Automated chases by tenure and balance. Occupancy and renewal dashboards that scale with your portfolio. Alerts when a property starts slipping, not after the month closes.</p>
+        </div>
+        <div class="industry-card">
+          <h4>Insurance Brokers</h4>
+          <p style="margin-bottom:16px"><strong style="color:var(--text)">Quote pipeline, without the inbox.</strong></p>
+          <p>Structured submission flows. Information collection that doesn't require chasing. Carrier coordination tracked in one place, visible to the whole team.</p>
+        </div>
+        <div class="industry-card">
+          <h4>CPG Brands</h4>
+          <p style="margin-bottom:16px"><strong style="color:var(--text)">Reporting that pays attention.</strong></p>
+          <p>Daily and weekly performance dashboards. Anomaly alerts surfaced by AI, not by someone squinting at a line chart. Conversion-rate optimization grounded in what your data actually says.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact">
+    <div class="contact-inner">
+      <h2>Ready to <span class="accent">figure it out?</span></h2>
+      <p>Tell us the messy part. That's usually where the work starts.</p>
+      <a href="mailto:chris@consultusai.com" class="contact-email">chris@consultusai.com</a>
+    </div>
+  </section>
+
+  <footer>© <span id="year"></span> Consultus AI · Figure it out.</footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>
