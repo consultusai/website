@@ -439,6 +439,61 @@ main { padding-top: 72px; }
 }
 @keyframes blink { 50% { opacity: 0; } }
 
+/* ─── Philosophy pull-quote ─── */
+.philosophy {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(30, 58, 95, 0.05), transparent 60%);
+}
+.philosophy-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 120px 40px;
+  text-align: center;
+}
+.philosophy-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.philosophy-eyebrow::before,
+.philosophy-eyebrow::after {
+  content: "";
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+}
+.philosophy blockquote {
+  font-size: clamp(30px, 4.2vw, 52px);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  margin: 0 auto 36px;
+  max-width: 780px;
+}
+.philosophy blockquote .outcome {
+  color: var(--gold);
+  font-style: italic;
+  font-weight: 400;
+}
+.philosophy p {
+  max-width: 640px;
+  margin: 0 auto;
+  color: var(--text-muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+@media (max-width: 900px) {
+  .philosophy-inner { padding: 80px 24px; }
+}
+
 /* ─── Pillars (Data × Automation × AI) ─── */
 .pillars {
   display: grid;
